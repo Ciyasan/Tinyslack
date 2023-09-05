@@ -1,0 +1,14 @@
+{
+  "configurations": [
+    {
+      "type": "java",
+      "name": "Spring Boot-ProjetCertifApplication<projet_certif>",
+      "request": "launch",
+      "cwd": "${workspaceFolder}",
+      "mainClass": "fr.groupe_3.projet_certif.ProjetCertifApplication",
+      "projectName": "projet_certif",
+      "args": "",
+      "envFile": "${workspaceFolder}/.env"
+    }
+  ]
+}

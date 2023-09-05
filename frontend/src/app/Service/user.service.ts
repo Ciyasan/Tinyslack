@@ -23,7 +23,7 @@ export class UserService {
   // récupérer un utilisateur par son nom
   getUserByName(userName: string) {
     return this.httpClient.get(
-      'http://localhost:8080/tinyslack/users/' + userName
+      'http://localhost:8080/tinyslack/users/' + userName,
     );
   }
 
@@ -31,7 +31,7 @@ export class UserService {
   addUser(user: User): Observable<User> {
     return this.httpClient.post<User>(
       'http://localhost:8080/tinyslack/users',
-      user
+      user,
     );
   }
 
@@ -39,14 +39,14 @@ export class UserService {
   updateUser(userName: string, user: User): Observable<User> {
     return this.httpClient.patch<User>(
       'http://localhost:8080/tinyslack/users/' + userName,
-      user
+      user,
     );
   }
 
   // supprimer un utilisateur existant en BDD
   deleteUser(userName: string | undefined): Observable<User> {
     return this.httpClient.delete<User>(
-      'http://localhost:8080/tinyslack/users/' + userName
+      'http://localhost:8080/tinyslack/users/' + userName,
     );
   }
 
